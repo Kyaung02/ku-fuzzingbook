@@ -1,0 +1,11 @@
+version: "3"
+services:
+  jupyter:
+    image: myjupyter:latest
+    privileged: true
+    environment:
+      - JUPYTER_TOKEN=easy
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:/Users/yanghm/KoreaUniversity/ku-fuzzingbook:/root/fuzzingbook
